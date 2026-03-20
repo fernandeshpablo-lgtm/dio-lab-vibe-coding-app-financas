@@ -1,113 +1,143 @@
-# 💸 App de Finanças Pessoais do Venilton com Vibe Coding
+# 📊 SmartFinance AI — App de Finanças Pessoais com IA
 
-Este projeto foi desenvolvido como um Desafio de Projeto da DIO de Vibe Coding utilizando o Lovable e o Copilot Web. A proposta é criar um aplicativo de organização financeira pessoal baseado em interações em linguagem natural.
-
----
-
-## 📝 PRD Refinado no Copilot Web
-
-```markdown
-# PRD - App de Organização Financeira com Conversa Natural
-
-## Visão Geral
-Criar um aplicativo de organização de finanças pessoais que funcione por meio de conversas em linguagem natural.  
-O objetivo é tornar o controle financeiro mais intuitivo, acessível e livre de burocracias como planilhas ou formulários complexos.
-
-## Problema a Resolver
-Muitas pessoas abandonam o controle financeiro por acharem os aplicativos atuais complicados, exigindo entradas manuais e oferecendo pouca personalização.  
-Queremos resolver isso com uma experiência conversacional fluida e recomendações automáticas que se adaptam ao perfil do usuário.
-
-## Público-Alvo
-Pessoas que desejam começar a organizar suas finanças de forma prática e sem complicações — especialmente iniciantes que não têm familiaridade com apps financeiros tradicionais.
-
-## Funcionalidades-Chave
-1. Registro de gastos via chat: O usuário descreve seus gastos em linguagem natural, como “gastei R$ 30 no mercado”.
-2. Classificação automática de transações: O app identifica e categoriza os gastos com base no texto.
-3. Definição e acompanhamento de metas financeiras: O usuário pode criar metas como “economizar R$ 500 até o fim do mês”.
-4. Dicas personalizadas do Agente Financeiro: Um assistente virtual que sugere formas de economizar com base nos hábitos do usuário.
-5. Relatórios simples e personalizados: Visualizações claras dos gastos, metas e progresso, adaptadas ao estilo do usuário.
-
-## Princípio de Design Universal
-A solução será construída com base em Design Universal, garantindo que o aplicativo ofereça uma experiência acessível, intuitiva e inclusiva para o maior número possível de pessoas — independentemente de idade, nível de alfabetização digital, limitações físicas ou cognitivas.  
-Isso inclui:
-- Interface clara e legível
-- Navegação simples e sem sobrecarga de informações
-- Compatibilidade com leitores de tela e comandos por voz
-- Feedbacks visuais e auditivos para facilitar o uso
-
-## Entregável da IA
-Gerar um plano de MVP contendo:
-- As principais telas (chat, metas, relatórios)
-- Recursos técnicos necessários (NLP, categorização automática, motor de recomendações)
-- Estratégia de validação inicial com usuários reais
-- Linguagem acessível e tom educativo, em português
-- Aplicação dos princípios de Design Universal desde o protótipo
-```
+## 💡 Ideia do Projeto
+O **SmartFinance AI** é um aplicativo de organização financeira pessoal que utiliza Inteligência Artificial para ajudar usuários a controlarem seus gastos, economizarem dinheiro e tomarem decisões financeiras mais inteligentes.
 
 ---
 
-## 💬 Interações com o Lovable
-
-> Crie um App de Finanças Pessoais com base no seguinte PRD (Product Requirements Document): {PRD}
-
-> Tentei criar uma meta chamada Reserva de Emergencia, mas ela não apareceu no componente. A impressão que tive foi que apenas o Assistente Financeiro a reconheceu, poderia verificar? Além disso, onde vejo os gráficos e extrato?
-
-> Sim (Quer que eu adicione uma tela de relatórios com gráficos e extrato detalhado das transações?)
+## 🎯 Problema
+Muitas pessoas enfrentam dificuldades para organizar suas finanças por:
+- Falta de tempo
+- Falta de conhecimento financeiro
+- Dificuldade em analisar gastos
 
 ---
 
-## 🎯 Resultado Final
-
-Acesse o protótipo funcional no Lovable:  
-**[conversa-fin-amigo.lovable.app](https://conversa-fin-amigo.lovable.app/)**
-
-<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/88ef611d-970e-4377-918a-918714311218" />
+## 👤 Público-Alvo (Persona)
+- Jovens adultos (18–40 anos)
+- Pessoas endividadas ou que desejam economizar
+- Usuários que buscam praticidade e automação
 
 ---
 
-## 🔍 Funcionalidades do App de Organização Financeira
+## 🚀 Funcionalidades Principais
+- Registro automático de despesas
+- Classificação inteligente de gastos
+- Dashboard com resumo financeiro
+- Alertas de gastos excessivos
+- Definição de metas financeiras
+- Relatórios semanais e mensais
+- Chat com assistente financeiro via IA
 
-### 1. Dashboard Financeiro
-- Exibe um panorama claro das finanças pessoais:
-  - **Receitas**: Total de ganhos registrados
-  - **Despesas**: Total de gastos
-  - **Saldo**: Diferença entre receitas e despesas
-- Interface simples e direta para facilitar a compreensão
+---
 
-### 2. Assistente Financeiro
-- Personagem conversacional que interage com o usuário
-- Incentiva a conexão de contas e cartões para uma visão completa das finanças
-- Oferece suporte emocional e motivacional
+## 🤖 Uso da Inteligência Artificial
+A IA será utilizada para:
 
-### 3. Registro de Transações via Chat
-- Campo de entrada para o usuário digitar mensagens em linguagem natural
-- Permite registrar gastos e interagir com o assistente de forma fluida
+- Classificar automaticamente os gastos  
+- Identificar padrões de consumo  
+- Sugerir formas de economia  
+- Prever gastos futuros  
+- Gerar relatórios automáticos  
+- Responder perguntas financeiras do usuário  
 
-### 4. Metas Financeiras
-- Área dedicada à criação e acompanhamento de objetivos financeiros
-- Sugestão proativa para o usuário definir metas
-- Botão de ação para adicionar novas metas
+---
 
-### 5. Relatórios Personalizados
-- Visualizações simples e adaptadas ao estilo do usuário
-- Acompanhamento de metas e progresso financeiro
+## 🧠 Prompts Utilizados
 
-### 6. Design Universal
-- Interface acessível e inclusiva:
-  - Linguagem simples
-  - Navegação clara
-  - Compatibilidade com leitores de tela e comandos por voz
-  - Feedbacks visuais e auditivos para facilitar o uso
+### Classificação de gastos
+"Classifique automaticamente essas transações em categorias como alimentação, transporte, lazer e contas fixas."
+
+### Sugestão de economia
+"Analise esses gastos mensais e sugira formas práticas de economizar dinheiro."
+
+### Resumo financeiro
+"Crie um resumo claro e objetivo das finanças do usuário neste mês, destacando gastos principais e oportunidades de economia."
+
+### Previsão de gastos
+"Com base nesse histórico, estime os gastos do próximo mês."
+
+### Assistente financeiro
+"Responda como um consultor financeiro e sugira melhorias para a saúde financeira do usuário."
+
+---
+
+## 🛠️ Ferramentas Utilizadas
+- Copilot (auxílio na geração de código)
+- Lovable (criação de interface com IA)
+- Python (backend e análise de dados)
+- React (frontend)
+- APIs de IA
+- Banco de dados (Firebase ou PostgreSQL)
+
+---
+
+## 📱 Estrutura do App
+
+### Tela Inicial
+- Saldo atual
+- Resumo do mês
+- Botão de adicionar gastos
+
+### Tela de Gastos
+- Lista de despesas
+- Categorias automáticas
+
+### Tela de IA
+- Chat com assistente financeiro
+
+### Tela de Relatórios
+- Gráficos mensais
+- Insights da IA
+
+---
+
+## 🚀 Diferenciais
+- Automação quase total do controle financeiro
+- IA que sugere ações práticas
+- Interface simples e intuitiva
+- Foco em solução real do problema do usuário
+
+---
+
+## 🧠 Uso Estratégico da IA no Projeto
+Durante o desenvolvimento:
+- Utilização de IA para gerar ideias
+- Criação e refinamento de prompts
+- Simulação de uso real do aplicativo
+- Estruturação do produto com apoio de IA
+
+---
+
+## 📄 PRD (Prompt Final)
+
+"Crie um aplicativo de finanças pessoais com Inteligência Artificial capaz de classificar automaticamente gastos, gerar relatórios financeiros, prever despesas futuras e sugerir formas de economia. O app deve possuir interface simples, dashboard com resumo financeiro, sistema de metas e um assistente em formato de chat que responde dúvidas financeiras do usuário."
+
+---
+
+## 📸 Interações com IA
+
+*(Adicione aqui prints das interações com Copilot ou Lovable)*
+
+Exemplo:
+![Exemplo](link-da-imagem-aqui)
+
+---
+
+## 📌 Resumo do App
+
+O SmartFinance AI é um aplicativo que utiliza Inteligência Artificial para automatizar o controle financeiro, ajudando usuários a entender seus gastos, economizar dinheiro e tomar melhores decisões financeiras.
 
 ---
 
 ## 🧠 Reflexão
 
-### O que funcionou bem?  
-O refinamento do PRD previamente feito no Copilot ajudou muito, pois os créditos do Lovable acabaram em apenas 3 interações.
+Durante este projeto, aprendi como a Inteligência Artificial pode ser utilizada não apenas para programação, mas também para criação de produtos digitais completos.
 
-### O que não funcionou como o esperado?  
-Esperava poder interagir mais vezes gratuitamente com o Lovable, mas as interações feitas já foram de grande valia para aprender mais sobre Vibe Coding.
+Entendi a importância de estruturar ideias, criar prompts eficientes e pensar como um desenvolvedor e empreendedor ao mesmo tempo.
 
-### O que aprendi sobre conversar com IAs?  
-Aprendi que é basicamente igual a conversar com uma pessoa: quanto mais detalhes e clareza você dá, melhor é a interação.
+Esse desafio me ajudou a enxergar como a IA pode acelerar processos e aumentar a produtividade no desenvolvimento de soluções reais.
+
+---
+
+
